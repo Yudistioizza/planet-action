@@ -24,5 +24,26 @@
 
     <script src="login.js" defer></script>
   </head>
-  <body></body>
+  <body style="margin: 0; padding: 0; background-color: #ffffff; display: flex; align-items: center; justify-content: center; height: 100vh;">
+    
+    <div id="login-content" style="text-align: center; padding: 30px; border-radius: 4px; width: 350px;">
+      <img alt="planet action">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus nihil</p>
+    </div>
+    
+    <div id="login-container" style="width: 100%; max-width: 350px; padding: 30px;">
+      <h3>Register your account!</h3>
+      <form>
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 10px;">
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 10px;">
+        
+        <div id="button-container">
+          
+        <button type="submit" onclick="register()" style="width: 100%; padding: 10px; margin: 10px 0; background-color: #92229e; color: white; border: none; border-radius: 10px; cursor: pointer;">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
