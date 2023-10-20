@@ -71,5 +71,21 @@
         </div>
       </div>
     </nav>
+
+    <div id="create-post" style="width: 100%; display: flex; align-items: center; justify-content: center; height: 70vh;">
+      <form id="post-form">
+        <h3>Post your content here!</h3>
+        <label for="title"><b>Title:</b></label>
+        <input type="text" id="title" name="title" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 10px;">
+        <br>
+        <label for="content"><b>Content:</b></label>
+        <textarea id="content" name="content" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 10px;"></textarea>
+        <br>
+        <label for="image"><b>Image:</b></label>
+        <input type="file" id="image" name="image" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 10px;">
+        <br>
+        <button type="submit" style="width: 100%; padding: 10px; margin: 10px 0; background-color: #92229e; color: white; border: none; border-radius: 10px; cursor: pointer;">Create Post</button>
+     </form>
+    </div>
   </body>
 </html>
