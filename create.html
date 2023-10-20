@@ -25,5 +25,51 @@
 
     <script src="create.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">🌏 Planet Action</a>
+
+        <!-- Mobile nav toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-content"
+          aria-controls="navbar-content"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar content -->
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul class="navbar-nav align-items-center w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="/feeds.html">Feeds</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/create.html">Create a Post</a>
+            </li>
+
+            <!-- User profile -->
+            <li class="nav-item ms-auto">
+              <a class="nav-link" href="/profile.html">
+                <span id="nav-username" class="me-2"></span>
+                <img
+                  id="nav-avatar"
+                  class="rounded"
+                  style="width: 2rem; height: 2rem"
+                  src="/avatar.webp"
+                  alt="avatar"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
