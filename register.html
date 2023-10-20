@@ -24,5 +24,52 @@
 
     <script src="register.js" defer></script>
   </head>
-  <body></body>
+  <body style="margin: 0; padding: 0; background-color: #ffffff; display: flex; align-items: center; justify-content: center; height: 100vh;">
+    
+    <div id="register-content" style="text-align: center; padding: 30px; border-radius: 4px; width: 350px;">
+      <img alt="planet action">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus nihil</p>
+    </div>
+    
+    <div id="register-container" style="width: 100%; max-width: 350px; padding: 30px;">
+      <h3>Register your account!</h3>
+      <form>
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 10px;">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 10px;">
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 10px;">
+        
+        <div id="button-container">
+          
+        <button type="submit" onclick="register()" style="width: 100%; padding: 10px; margin: 10px 0; background-color: #92229e; color: white; border: none; border-radius: 10px; cursor: pointer;">Register</button>
+        </div>
+      </form>
+    </div>
+
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCiTnglggEu3BL74vQ3dsLtnyOj07gzLmc",
+    authDomain: "planet-action.firebaseapp.com",
+    projectId: "planet-action",
+    storageBucket: "planet-action.appspot.com",
+    messagingSenderId: "680006976090",
+    appId: "1:680006976090:web:bb6b723cc457de09854e63",
+    measurementId: "G-2KLVYE9MSB"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+  </body>
 </html>
